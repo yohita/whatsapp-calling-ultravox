@@ -1,0 +1,16 @@
+{
+  "name": "whatsapp-calling-ultravox",
+  "version": "1.0.0",
+  "description": "Real-time WhatsApp voice calling integration using the WhatsApp Business API and Ultravox - WebRTC.",
+  "main": "server.js",
+  "author": "Amit Kulkarni",
+  "license": "MIT",
+  "dependencies": {
+    "@roamhq/wrtc": "^0.9.1",
+    "axios": "^1.11.0",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "socket.io": "^4.8.1",
+    "ws": "^8.18.3"
+  }
+}
