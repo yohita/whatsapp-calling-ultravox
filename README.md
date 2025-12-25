@@ -39,8 +39,8 @@ WhatsApp enforces strict policies to prevent abuse:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/yohita/whatsapp-calling-ultravox.git
+cd whatsapp-calling-ultravox
 ```
 
 ### 2. Install Dependencies
@@ -55,6 +55,7 @@ Create a `.env` file in the root directory:
 PORT=3000
 PHONE_NUMBER_ID=your_whatsapp_phone_number_id
 META_ACCESS_TOKEN=your_facebook_meta_access_token
+META_VERIFY_TOKEN=my_super_secret_token_123 //change this as you wish
 CALL_MODE=ultravox  # Options: 'ultravox' or 'normal'
 ULTRAVOX_API_KEY=your_ultravox_api_key
 ```
