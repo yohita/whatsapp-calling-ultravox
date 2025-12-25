@@ -83,8 +83,8 @@ app.get("/call-events", (req, res) => {
   const challenge = req.query["hub.challenge"];
 
   // Use the same token you set in Meta
-  const VERIFY_TOKEN = "my_super_secret_token_123"; // Change this to whatever you want
-
+  const VERIFY_TOKEN = process.env.META_VERIFY_TOKEN || "my_super_secret_token_123"; // Change this to whatever you want
+  //console.log("Webhook verification request received:", { mode, token,VERIFY_TOKEN, challenge });  
   if (mode && token) {
     if (mode === "subscribe" && token === VERIFY_TOKEN) {
       console.log("Webhook verified successfully!");
